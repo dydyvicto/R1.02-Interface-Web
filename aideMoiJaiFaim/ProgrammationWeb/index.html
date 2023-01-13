@@ -18,24 +18,46 @@
             </aside>
             <div class="sloggan">Grâce à moi, t'auras plus la dalle</div>
         </nav>
-        <div class="zoning">
-            <div class="contenu">
-                <div class="ajoutResto">
-                    <p>Ajouter un restaurant</p>
-                </div>
-                <label for="nomResto">Nom du restaurant :</label>
-                <input type="text" id="nomResto" size="50%">
-                <br><br>
-                <label for="adresse">Adresse :</label>
-                <input type="text" id="adresse" size="50%">
-                <br><br>
-                <label for="ville">Ville :</label>
-                <input type="text" id="ville" size="50%">
-                <br><br>
-                <label for="cp">Code postal :</label>
-                <input type="text" id="cp" size="50%">
+        <main>
+            <div class="formulaireAjout">
+                    <h2>Ajouter un restaurant</h2>
+
+                    <form class="formulaire">
+                        <label for="nomResto">Nom du restaurant :</label>
+                        <input type="text" id="nomResto" size="50%">
+                        <label for="adresse">Adresse :</label>
+                        <input type="text" id="adresse" size="50%">
+                        <label for="ville">Ville :</label>
+                        <input type="text" id="ville" size="50%">
+                        <label for="cp">Code postal :</label>
+                        <input type="text" id="cp" size="50%">
+                        <label></label>
+                        <select name="type de restaurant" id="typeResto">
+                            <option value="typeR">Type de restaurant</option>
+                            <option value="fast-food">Fast-food</option>
+                            <option value="volonte">Restaurant à volonté</option>
+                        </select>
+                        <label for="telephone">Téléphone :</label>
+                        <input type="text" id="telephone" size="50%">
+                        <label for="description">Description :</label>
+                        <textarea type="text" id="description" size="50%"></textarea>
+                    </form>
+                    <aside>
+                        <article class="choixPhotos">
+                        <h3>Ajouter des photos</h3>
+                        <button value="Photo1">Photo 1</button>
+                        <button value="Photo2">Photo 2</button>
+                        <button value="Photo3">Photo 3</button>
+                        <p>plus de photos +</p>
+                        </article>
+                        <article class="validation">
+                            <button value="annuler">annuler</button>
+                            <button value="valider">Valider</button>
+                        </article>
+                    </aside>
+               
             </div>
-        </div>
+        </main>
         
         
     </body>
