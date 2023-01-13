@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap'); /* importe la police d'excriture Open Sans */
+
+/*----------------------------------------------------------
+                        Zoning
+----------------------------------------------------------*/
+
+.zoning { /* Le zoning du site*/
+    display: grid;
+    grid-template-columns: 1fr 10fr 10fr 1fr;
+    grid-template-rows: 1fr 20fr 20fr;
+    margin-right : -10px;
+    margin-left : -10px;
+}
+
+
+/*----------------------------------------------------------
+      Elements communs à toutes les interfaces du site
+----------------------------------------------------------*/
+
+nav { /* La barre de navigation */
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    grid-template-rows: 80px;
+    background-color: #F0E337;
+    margin-top : -10px;
+    margin-right : -10px;
+    margin-left : -10px;
+    color: #000000;
+}
+
+#logo { /* Le logo du site */
+    grid-column: 1; 
+    grid-row: 1;
+    width : 450px;
+    height : 225px;
+    margin-top: -68px;
+}
+
+.menu { /* L'interface de connexion */
+    grid-column-start: 3; 
+    grid-column-end: -1;
+    grid-row: 1;
+    margin-left: 100px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sloggan { /* Le sloggan de l'application */
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row: 1;
+    margin-left: 30px;
+    margin-top : 30px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#button{ /* Le bouton des différents menus */
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 6px;
+    margin: 10px;
+    border: solid 2px #000000;
+    vertical-align: 25px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#button:hover{
+    background-color:rgb(73, 73, 73);
+}
+
+#utilisateur{ /* le nom du d'utilisateur */
+    padding: 5px;
+    vertical-align: 25px;
+    font-size: 18px;
+}
+
+#pfp { /* La photo de profil de l'utilisateur */
+    width : 55px;
+    height : 55px;
+    margin-top: 10px;
+    border-radius: 1px;
+    padding: 2px;
+    background-color: #000000;
+}
+
+.contenu { /* Le contenu de l'apllication */
+    grid-column-start: 2; 
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    margin-top : 300px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ajoutResto {
+    text-decoration: underline;
+    margin-top: -300px;
+    font-size: 27px;
+}
